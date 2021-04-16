@@ -1,0 +1,14 @@
+@media screen and (max-width: 768px) {
+  app-navigation-bar {
+    display: none;
+  }
+}
+@media screen and (min-width: 769px) {
+  app-mobile-navigation-bar {
+    display: none;
+  }
+}
+
+.application-wrapper {
+  padding: 0.5rem;
+}

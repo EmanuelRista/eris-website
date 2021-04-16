@@ -1,0 +1,15 @@
+<h2>My work</h2>
+
+<div class="container">
+  <div class="panel first-panel mat-elevation-z8" (click)="onClick(1)" [ngClass]="{'active': tab==='tab1'}"
+    style="background-image: url('{{ jumbotron_panels[0].url_image }}');">
+    <h3>{{ jumbotron_panels[0].text }}</h3>
+  </div>
+  <div class="panel mat-elevation-z8" (click)="onClick(2)" [ngClass]="{'active': tab==='tab2'}"
+    style="background-image: url('{{ jumbotron_panels[1].url_image }}');">
+    <h3>{{ jumbotron_panels[1].text }}</h3>
+  </div>
+  <div class="panel last-panel mat-elevation-z8" (click)="onClick(3)" [ngClass]="{'active': tab==='tab3'}"
+    style="background-image: url('{{ jumbotron_panels[2].url_image }}');">
+    <h3>{{ jumbotron_panels[2].text }} <span class="text-important">!important</span></h3>
+  </div>

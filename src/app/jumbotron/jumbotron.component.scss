@@ -1,0 +1,71 @@
+h2 {
+  text-align: center;
+  margin: 2rem 0 !important;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.panel {
+  background-size: contain;
+  background-color: var(--accent-color);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 500px;
+  border-radius: 0.25rem;
+  color: #fff;
+  cursor: pointer;
+  flex: 0.5;
+  margin: 0.5rem 0.25rem;
+  position: relative;
+  transition: all 700ms ease-in;
+}
+
+.panel h3 {
+  font-size: 30px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+}
+
+.panel p {
+  font-size: 20px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+}
+
+.panel.active {
+  flex: 5;
+}
+
+.panel.active h3,
+.panel.active p {
+  opacity: 1;
+  transition-delay: 1s;
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 100%;
+  }
+
+  .panel:nth-of-type(4),
+  .panel:nth-of-type(5) {
+    display: none;
+  }
+}
+
+.first-panel {
+  margin-left: 0;
+}
+
+.last-panel {
+  margin-right: 0;
+}
